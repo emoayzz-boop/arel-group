@@ -8,6 +8,8 @@
 
 <meta name="description" content="AYAZ GROUP yenilenebilir enerji, GES, enerji depolama, projelendirme ve bakım servis çözümleri sunar.">
 
+<meta name="google-site-verification" content="8hpRFgybB-83_ciAgihkqKfokT-UW2thPN7uhkyAySo" />
+
 <style>
 * {
     box-sizing: border-box;
@@ -669,4 +671,158 @@ göre yapılmalıdır.
 <a
 href="https://wa.me/905447157701"
 target="_blank"
-class="wh
+class="whatsapp-btn">
+📱 WhatsApp'tan Teklif İste
+</a>
+
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="projects" id="projeler">
+<div class="container">
+
+<div class="section-title">
+<h2>Projeler</h2>
+<p>AYAZ GROUP proje alanları.</p>
+</div>
+
+<div class="cards">
+
+<div class="project">
+<div class="project-top">☀️</div>
+<div class="project-content">
+<h3>Çatı GES</h3>
+<p>Çatı üzeri enerji üretim sistemleri.</p>
+</div>
+</div>
+
+<div class="project">
+<div class="project-top">🌱</div>
+<div class="project-content">
+<h3>Arazi GES</h3>
+<p>Arazi tipi yenilenebilir enerji sistemleri.</p>
+</div>
+</div>
+
+<div class="project">
+<div class="project-top">🏭</div>
+<div class="project-content">
+<h3>Endüstriyel GES</h3>
+<p>Ticari ve endüstriyel enerji çözümleri.</p>
+</div>
+</div>
+
+<div class="project">
+<div class="project-top">🔋</div>
+<div class="project-content">
+<h3>Enerji Depolama</h3>
+<p>Enerji depolama ve kullanım çözümleri.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="contact" id="iletisim">
+<div class="container">
+
+<div class="section-title">
+<h2>İletişim</h2>
+<p>AYAZ GROUP ile iletişime geçin.</p>
+</div>
+
+<div class="contact-box">
+
+<div class="contact-item">
+<strong>📞 Telefon</strong>
+<a href="tel:+905447157701">
+0544 715 77 01
+</a>
+</div>
+
+<div class="contact-item">
+<strong>💬 WhatsApp</strong>
+<a href="https://wa.me/905447157701" target="_blank">
+WhatsApp'tan Yaz
+</a>
+</div>
+
+<div class="contact-item">
+<strong>📍 Konum</strong>
+<span>Bursa</span>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<footer>
+<div class="container">
+
+<p>
+© 2026 <strong>AYAZ GROUP</strong> —
+Geleceğe Güç Katıyoruz.
+</p>
+
+</div>
+</footer>
+
+<script>
+function menuAc() {
+
+    var menu = document.getElementById("menu");
+
+    if (menu.classList.contains("show")) {
+        menu.classList.remove("show");
+    } else {
+        menu.classList.add("show");
+    }
+}
+
+function gesHesapla() {
+
+    var tuketim = Number(
+        document.getElementById("tuketim").value
+    );
+
+    var panelWatt = Number(
+        document.getElementById("panel").value
+    );
+
+    if (tuketim <= 0 || panelWatt <= 0) {
+        alert("Lütfen geçerli değerler girin.");
+        return;
+    }
+
+    var sistemKW = tuketim / 120;
+
+    var panelKW = panelWatt / 1000;
+
+    var panelSayisi = Math.ceil(
+        sistemKW / panelKW
+    );
+
+    var yillikUretim =
+        sistemKW * 120 * 12;
+
+    document.getElementById("sistemGucu").textContent =
+        sistemKW.toFixed(2);
+
+    document.getElementById("panelSayisi").textContent =
+        panelSayisi;
+
+    document.getElementById("yillikUretim").textContent =
+        Math.round(yillikUretim).toLocaleString("tr-TR");
+
+    document.getElementById("sonuc").style.display =
+        "block";
+}
+</script>
+
+</body>
+</html>
