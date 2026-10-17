@@ -1,852 +1,208 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-site-verification" content="8hpRFgybB-83_ciAgihkqKfokT-UW2thPN7uhkyAySo" />
-<title>AYAZ GROUP | Yenilenebilir Enerji ve GES Çözümleri</title>
 
-<meta name="description" content="AYAZ GROUP Bursa yenilenebilir enerji ve GES çözümleri. Çatı GES, arazi GES, enerji depolama, projelendirme, bakım ve servis hizmetleri.">
+<title>AYAZ GROUP | GES ve Yenilenebilir Enerji</title>
+<meta name="description" content="AYAZ GROUP Bursa; çatı GES, arazi GES, enerji depolama ve yenilenebilir enerji çözümleri sunar.">
+<meta name="google-site-verification" content="8hpRFgybB-83_ciAgihkqKfokT-UW2thPN7uhkyAySo">
 
-<meta name="google-site-verification" content="8hpRFgybB-83_ciAgihkqKfokT-UW2thPN7uhkyAySo" />
-/* AYAZ GROUP MODERN TASARIM */
-.card, .project, .contact-item {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover, .project:hover, .contact-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 14px 30px rgba(7, 26, 51, 0.12);
-}
-
-.btn {
-    transition: all 0.25s ease;
-}
-
-.btn-green:hover {
-    background: #25b887;
-    transform: translateY(-2px);
-}
-
-.logo {
-    letter-spacing: 1px;
-}
-
-section {
-    scroll-margin-top: 80px;
-}
 <style>
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f4f6f8;
-    color: #172033;
-    line-height: 1.6;
-}
-
-.container {
-    width: 92%;
-    max-width: 1150px;
-    margin: auto;
-}
-
-/* HEADER */
-
-header {
-    background: #071a33;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.nav {
-    min-height: 72px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo {
-    color: white;
-    text-decoration: none;
-    font-size: 26px;
-    font-weight: 900;
-}
-
-.logo span {
-    color: #38d39f;
-    font-size: 14px;
-    margin-left: 4px;
-    letter-spacing: 2px;
-}
-
-nav {
-    display: flex;
-    gap: 20px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #38d39f;
-}
-
-.menu {
-    display: none;
-    border: 0;
-    background: none;
-    color: white;
-    font-size: 28px;
-}
-
-/* HERO */
-
-.hero {
-    background: linear-gradient(135deg, #071a33, #0d355b);
-    color: white;
-    text-align: center;
-    padding: 110px 20px;
-}
-
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.hero h1 span {
-    color: #38d39f;
-}
-
-.hero p {
-    max-width: 700px;
-    margin: auto;
-    margin-bottom: 30px;
-    font-size: 19px;
-    color: #dce8f3;
-}
-
-.btn {
-    display: inline-block;
-    padding: 14px 24px;
-    margin: 5px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.btn-green {
-    background: #38d39f;
-    color: #071a33;
-}
-
-.btn-outline {
-    border: 1px solid #38d39f;
-    color: white;
-}
-
-/* SECTIONS */
-
-section {
-    padding: 75px 0;
-}
-
-.section-title {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.section-title h2 {
-    color: #071a33;
-    font-size: 34px;
-    margin-bottom: 10px;
-}
-
-.section-title p {
-    color: #667085;
-}
-
-/* CARDS */
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-}
-
-.card {
-    background: white;
-    padding: 28px;
-    border-radius: 14px;
-    border: 1px solid #e5e9ee;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
-}
-
-.card .icon {
-    font-size: 34px;
-    margin-bottom: 12px;
-}
-
-.card h3 {
-    color: #071a33;
-    margin-bottom: 10px;
-}
-
-.card p {
-    color: #667085;
-}
-
-/* ABOUT */
-
-.about {
-    background: white;
-}
-
-.about-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: center;
-}
-
-.about-box h2 {
-    font-size: 35px;
-    color: #071a33;
-    margin-bottom: 18px;
-}
-
-.about-box p {
-    color: #667085;
-    margin-bottom: 15px;
-}
-
-.stats {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
-}
-
-.stat {
-    background: #071a33;
-    color: white;
-    padding: 28px;
-    border-radius: 12px;
-    text-align: center;
-}
-
-.stat strong {
-    display: block;
-    color: #38d39f;
-    font-size: 28px;
-}
-
-/* CALCULATOR */
-
-.calculator {
-    background: #071a33;
-}
-
-.calculator .section-title h2 {
-    color: white;
-}
-
-.calculator .section-title p {
-    color: #c8d5e3;
-}
-
-.calc-box {
-    max-width: 650px;
-    margin: auto;
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-}
-
-.calc-box label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 7px;
-}
-
-.calc-box input {
-    width: 100%;
-    padding: 14px;
-    margin-bottom: 18px;
-    border: 1px solid #d5dce5;
-    border-radius: 8px;
-    font-size: 16px;
-}
-
-.calculate-btn {
-    width: 100%;
-    padding: 15px;
-    border: 0;
-    border-radius: 8px;
-    background: #38d39f;
-    color: #071a33;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.result {
-    display: none;
-    margin-top: 25px;
-    padding: 20px;
-    background: #eefaf5;
-    border-radius: 10px;
-}
-
-.result p {
-    margin: 8px 0;
-}
-
-.whatsapp-btn {
-    display: block;
-    text-align: center;
-    background: #25d366;
-    color: white;
-    padding: 13px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 18px;
-}
-
-/* PROJECTS */
-
-.projects {
-    background: #f4f6f8;
-}
-
-.project {
-    background: white;
-    border-radius: 14px;
-    overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
-}
-
-.project-top {
-    height: 140px;
-    background: linear-gradient(135deg, #071a33, #164d5f);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 45px;
-}
-
-.project-content {
-    padding: 23px;
-}
-
-.project-content h3 {
-    color: #071a33;
-    margin-bottom: 8px;
-}
-
-.project-content p {
-    color: #667085;
-}
-
-/* CONTACT */
-
-.contact {
-    background: white;
-}
-
-.contact-box {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.contact-item {
-    padding: 25px;
-    background: #f4f6f8;
-    border-radius: 12px;
-    text-align: center;
-}
-
-.contact-item strong {
-    display: block;
-    color: #071a33;
-    font-size: 18px;
-    margin-bottom: 8px;
-}
-
-.contact-item a {
-    color: #087f5b;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* FOOTER */
-
-footer {
-    background: #071a33;
-    color: #c8d5e3;
-    text-align: center;
-    padding: 28px 0;
-}
-
-footer strong {
-    color: white;
-}
-
-/* MOBILE */
-
-@media (max-width: 800px) {
-
-    nav {
-        display: none;
-        position: absolute;
-        top: 72px;
-        right: 4%;
-        flex-direction: column;
-        background: #071a33;
-        padding: 18px;
-        border-radius: 10px;
-    }
-
-    nav.show {
-        display: flex;
-    }
-
-    .menu {
-        display: block;
-    }
-
-    .hero {
-        padding: 75px 20px;
-    }
-
-    .hero h1 {
-        font-size: 36px;
-    }
-
-    .hero p {
-        font-size: 17px;
-    }
-
-    .cards {
-        grid-template-columns: 1fr;
-    }
-
-    .about-box {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-box {
-        grid-template-columns: 1fr;
-    }
-}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;color:#263449;line-height:1.6;background:#f5f8fb}
+header{background:#071a33;color:white;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
+.logo{font-size:25px;font-weight:bold;color:#38d39f}
+nav{display:flex;gap:16px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-size:14px}
+nav a:hover{color:#38d39f}
+.hero{background:linear-gradient(135deg,#071a33,#123b58);color:white;text-align:center;padding:85px 20px}
+.hero h1{font-size:clamp(32px,6vw,52px);margin-bottom:18px}
+.hero p{max-width:650px;margin:0 auto 25px;color:#dce7f0}
+.btn{display:inline-block;background:#38d39f;color:#071a33;text-decoration:none;padding:13px 22px;border-radius:7px;font-weight:bold;border:0;cursor:pointer}
+section{padding:55px 6%}
+.section-title{text-align:center;margin-bottom:30px}
+.section-title h2{font-size:30px;color:#071a33}
+.section-title p{color:#64748b;margin-top:8px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:white;padding:25px;border-radius:12px;border:1px solid #e1e8ef;box-shadow:0 5px 18px #071a330b}
+.card h3{color:#087f62;margin-bottom:10px}
+.about{background:#eaf2f7}
+.about p{max-width:850px;margin:auto;text-align:center}
+.calculator{max-width:600px;margin:auto;background:white;padding:25px;border-radius:12px;box-shadow:0 5px 20px #071a3312}
+label{display:block;margin:14px 0 6px;font-weight:bold}
+input{width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:7px;font-size:16px}
+button{margin-top:18px}
+#result{margin-top:20px;padding:15px;background:#e7f8f1;border-radius:8px;display:none}
+.contact{background:#071a33;color:white;text-align:center}
+.contact h2{color:white}
+.contact p{margin:10px 0 20px}
+footer{background:#041020;color:#cbd5e1;text-align:center;padding:20px;font-size:13px}
+@media(max-width:600px){header{justify-content:center}nav{justify-content:center}nav a{font-size:13px}.hero{padding:60px 18px}section{padding:42px 5%}}
 </style>
 </head>
 
 <body>
 
 <header>
-<div class="container nav">
-
-<a href="#anasayfa" class="logo">
-AYAZ <span>GROUP</span>
-</a>
-
-<button class="menu" onclick="menuAc()">
-☰
-</button>
-
-<nav id="menu">
-<a href="#anasayfa">Ana Sayfa</a>
-<a href="#cozumler">Çözümler</a>
-<a href="#hakkimizda">Hakkımızda</a>
-<a href="#neden">Neden Biz?</a>
-<a href="#hesapla">GES Hesapla</a>
-<a href="#projeler">Projeler</a>
-<a href="#iletisim">İletişim</a>
-</nav>
-
-</div>
+  <div class="logo">AYAZ GROUP</div>
+  <nav>
+    <a href="#anasayfa">Ana Sayfa</a>
+    <a href="#cozumler">Çözümler</a>
+    <a href="#hakkimizda">Hakkımızda</a>
+    <a href="#hesapla">GES Hesapla</a>
+    <a href="#iletisim">İletişim</a>
+  </nav>
 </header>
 
+<main>
 <section class="hero" id="anasayfa">
-<div class="container">
-
-<h1>
-Geleceğe <span>Güç</span> Katıyoruz.
-</h1>
-
-<p>
-AYAZ GROUP olarak yenilenebilir enerji, GES ve enerji depolama
-çözümleriyle daha güçlü ve sürdürülebilir bir gelecek için çalışıyoruz.
-</p>
-
-<a href="#hesapla" class="btn btn-green">
-GES Hesapla
-</a>
-
-<a href="https://wa.me/905447157701"
-target="_blank"
-class="btn btn-outline">
-WhatsApp'tan Ulaş
-</a>
-
-</div>
+  <h1>Geleceğe Güç Katıyoruz.</h1>
+  <p>İşletmeniz ve projeleriniz için yenilenebilir enerji, güneş enerjisi sistemleri ve enerji depolama çözümleri.</p>
+  <a class="btn" href="https://wa.me/905447157701" target="_blank" rel="noopener">WhatsApp'tan Ulaş</a>
 </section>
 
 <section id="cozumler">
-<div class="container">
-
-<div class="section-title">
-<h2>Çözümlerimiz</h2>
-<p>İhtiyacınıza uygun enerji çözümleri.</p>
-</div>
-
-<div class="cards">
-
-<div class="card">
-<div class="icon">🏠</div>
-<h3>Çatı GES</h3>
-<p>Ev, işletme ve ticari binalar için çatı üzeri GES çözümleri.</p>
-</div>
-
-<div class="card">
-<div class="icon">🌱</div>
-<h3>Arazi GES</h3>
-<p>Arazi tipi güneş enerji santralleri için proje ve uygulama çözümleri.</p>
-</div>
-
-<div class="card">
-<div class="icon">🏭</div>
-<h3>Ticari ve Endüstriyel</h3>
-<p>İşletmelerin enerji ihtiyacına yönelik sistem çözümleri.</p>
-</div>
-
-<div class="card">
-<div class="icon">🔋</div>
-<h3>Enerji Depolama</h3>
-<p>Enerjinin depolanması ve ihtiyaç halinde kullanılmasına yönelik çözümler.</p>
-</div>
-
-<div class="card">
-<div class="icon">📐</div>
-<h3>Projelendirme</h3>
-<p>Sistemin ihtiyaca göre planlanması ve tasarlanması.</p>
-</div>
-
-<div class="card">
-<div class="icon">🛠️</div>
-<h3>Bakım ve Servis</h3>
-<p>Enerji sistemleri için kontrol, bakım ve teknik servis desteği.</p>
-</div>
-
-</div>
-</div>
+  <div class="section-title">
+    <h2>Çözümlerimiz</h2>
+    <p>Enerji ihtiyaçlarınıza uygun çözümler.</p>
+  </div>
+  <div class="cards">
+    <article class="card">
+      <h3>Çatı GES</h3>
+      <p>İşletme ve uygun çatı alanları için güneş enerjisi sistemi çözümleri.</p>
+    </article>
+    <article class="card">
+      <h3>Arazi GES</h3>
+      <p>Arazi tipi güneş enerjisi projeleri için çözüm ve planlama desteği.</p>
+    </article>
+    <article class="card">
+      <h3>Ticari ve Endüstriyel</h3>
+      <p>İşletmelerin enerji ihtiyaçlarına yönelik sistem seçenekleri.</p>
+    </article>
+    <article class="card">
+      <h3>Enerji Depolama</h3>
+      <p>Akü ve batarya sistemleri için ihtiyaç odaklı çözümler.</p>
+    </article>
+    <article class="card">
+      <h3>Projelendirme</h3>
+      <p>Proje ihtiyaçlarının değerlendirilmesi ve sistem planlaması.</p>
+    </article>
+    <article class="card">
+      <h3>Bakım ve Servis</h3>
+      <p>Güneş enerjisi sistemleri için bakım ve teknik destek seçenekleri.</p>
+    </article>
+  </div>
 </section>
 
 <section class="about" id="hakkimizda">
-<div class="container about-box">
-
-<div>
-<h2>AYAZ GROUP</h2>
-
-<p>
-Yenilenebilir enerji alanında modern, güvenilir ve sürdürülebilir
-çözümler geliştirmek için çalışıyoruz.
-</p>
-
-<p>
-Amacımız müşterilerimizin enerji ihtiyaçlarına uygun,
-verimli ve uzun ömürlü sistemler sunmaktır.
-</p>
-</div>
-
-<div class="stats">
-
-<div class="stat">
-<strong>GES</strong>
-<span>Enerji Çözümleri</span>
-</div>
-
-<div class="stat">
-<strong>7/24</strong>
-<span>Destek Anlayışı</span>
-</div>
-
-<div class="stat">
-<strong>360°</strong>
-<span>Çözüm Yaklaşımı</span>
-</div>
-
-<div class="stat">
-<strong>%100</strong>
-<span>Müşteri Odaklı</span>
-</div>
-
-</div>
-
-</div>
+  <div class="section-title">
+    <h2>AYAZ GROUP Hakkında</h2>
+  </div>
+  <p>AYAZ GROUP olarak yenilenebilir enerji alanında verimli, güvenilir ve ihtiyaca uygun çözümleri önemsiyoruz. Bursa merkezli iletişimimizle projelerin ihtiyaçlarını değerlendiriyor, uygun çözümler için müşterilerimizle birlikte çalışıyoruz.</p>
 </section>
 
-<section id="neden">
-<div class="container">
-
-<div class="section-title">
-<h2>Neden AYAZ GROUP?</h2>
-<p>Enerji projelerinde çözüm ortağınız.</p>
-</div>
-
-<div class="cards">
-
-<div class="card">
-<div class="icon">⚡</div>
-<h3>Verimli Çözümler</h3>
-<p>İhtiyaca uygun sistem tasarımıyla verimli enerji üretimini hedefliyoruz.</p>
-</div>
-
-<div class="card">
-<div class="icon">📊</div>
-<h3>Doğru Projelendirme</h3>
-<p>Proje öncesinde tüketim ve sistem ihtiyaçlarını değerlendiriyoruz.</p>
-</div>
-
-<div class="card">
-<div class="icon">🤝</div>
-<h3>Güvenilir Hizmet</h3>
-<p>Projenin farklı aşamalarında müşterilerimize destek olmayı hedefliyoruz.</p>
-</div>
-
-</div>
-</div>
+<section>
+  <div class="section-title">
+    <h2>Neden AYAZ GROUP?</h2>
+    <p>Her projede doğru ihtiyacı anlamaya odaklanıyoruz.</p>
+  </div>
+  <div class="cards">
+    <article class="card">
+      <h3>İhtiyaca Uygun</h3>
+      <p>Her projenin tüketimini ve kullanım amacını ayrı değerlendiriyoruz.</p>
+    </article>
+    <article class="card">
+      <h3>Şeffaf İletişim</h3>
+      <p>Süreç ve seçenekler hakkında açık iletişim kurmayı önemsiyoruz.</p>
+    </article>
+    <article class="card">
+      <h3>Geleceğe Yönelik</h3>
+      <p>Enerji verimliliği ve yenilenebilir enerji çözümlerini destekliyoruz.</p>
+    </article>
+  </div>
 </section>
 
-<section class="calculator" id="hesapla">
-<div class="container">
+<section id="hesapla" class="about">
+  <div class="section-title">
+    <h2>GES Güç Tahmini</h2>
+    <p>Aylık tüketimine göre yaklaşık sistem gücünü hesapla.</p>
+  </div>
+  <div class="calculator">
+    <label for="tuketim">Aylık elektrik tüketimi (kWh)</label>
+    <input id="tuketim" type="number" min="1" placeholder="Örnek: 1000">
 
-<div class="section-title">
-<h2>GES Sistemini Hesapla</h2>
-<p>Aylık elektrik tüketiminize göre yaklaşık sistem gücünü hesaplayın.</p>
-</div>
+    <label for="panel">Panel gücü (Watt)</label>
+    <input id="panel" type="number" min="1" value="550">
 
-<div class="calc-box">
-
-<label for="tuketim">
-Aylık Elektrik Tüketimi (kWh)
-</label>
-
-<input
-type="number"
-id="tuketim"
-placeholder="Örnek: 3000"
-min="1">
-
-<label for="panel">
-Panel Gücü (Watt)
-</label>
-
-<input
-type="number"
-id="panel"
-value="550"
-min="100">
-
-<button
-class="calculate-btn"
-onclick="gesHesapla()">
-⚡ GES Hesapla
-</button>
-
-<div class="result" id="sonuc">
-
-<p>
-<strong>Yaklaşık Sistem Gücü:</strong>
-<span id="sistemGucu"></span> kW
-</p>
-
-<p>
-<strong>Yaklaşık Panel Sayısı:</strong>
-<span id="panelSayisi"></span> adet
-</p>
-
-<p>
-<strong>Yaklaşık Yıllık Üretim:</strong>
-<span id="yillikUretim"></span> kWh
-</p>
-
-<p>
-<small>
-Bu hesaplama yaklaşık değer verir. Gerçek sistem boyutlandırması
-konum, yön, gölgelenme, panel, inverter ve diğer teknik özelliklere
-göre yapılmalıdır.
-</small>
-</p>
-
-<a
-href="https://wa.me/905447157701"
-target="_blank"
-class="whatsapp-btn">
-📱 WhatsApp'tan Teklif İste
-</a>
-
-</div>
-
-</div>
-</div>
+    <button class="btn" type="button" onclick="gesHesapla()">Tahmini Hesapla</button>
+    <div id="result" aria-live="polite"></div>
+    <p style="font-size:12px;margin-top:15px;color:#64748b">Bu sonuç ön tahmindir; gerçek sistem gücü çatı veya arazi koşulları, konum, gölgelenme ve tüketim profiline göre değişir.</p>
+  </div>
 </section>
 
-<section class="projects" id="projeler">
-<div class="container">
-
-<div class="section-title">
-<h2>Projeler</h2>
-<p>AYAZ GROUP proje alanları.</p>
-</div>
-
-<div class="cards">
-
-<div class="project">
-<div class="project-top">☀️</div>
-<div class="project-content">
-<h3>Çatı GES</h3>
-<p>Çatı üzeri enerji üretim sistemleri.</p>
-</div>
-</div>
-
-<div class="project">
-<div class="project-top">🌱</div>
-<div class="project-content">
-<h3>Arazi GES</h3>
-<p>Arazi tipi yenilenebilir enerji sistemleri.</p>
-</div>
-</div>
-
-<div class="project">
-<div class="project-top">🏭</div>
-<div class="project-content">
-<h3>Endüstriyel GES</h3>
-<p>Ticari ve endüstriyel enerji çözümleri.</p>
-</div>
-</div>
-
-<div class="project">
-<div class="project-top">🔋</div>
-<div class="project-content">
-<h3>Enerji Depolama</h3>
-<p>Enerji depolama ve kullanım çözümleri.</p>
-</div>
-</div>
-
-</div>
-</div>
+<section id="projeler">
+  <div class="section-title">
+    <h2>Çalışma Alanlarımız</h2>
+    <p>Farklı enerji ihtiyaçları için proje değerlendirmesi.</p>
+  </div>
+  <div class="cards">
+    <article class="card">
+      <h3>Evler ve Villalar</h3>
+      <p>Konutların elektrik ihtiyacına uygun güneş enerjisi seçenekleri.</p>
+    </article>
+    <article class="card">
+      <h3>İşletmeler</h3>
+      <p>Atölye, fabrika ve ticari işletmeler için enerji çözümleri.</p>
+    </article>
+    <article class="card">
+      <h3>Bağımsız Sistemler</h3>
+      <p>Şebekeden bağımsız kullanım için uygun sistem seçeneklerinin değerlendirilmesi.</p>
+    </article>
+  </div>
 </section>
 
 <section class="contact" id="iletisim">
-<div class="container">
-
-<div class="section-title">
-<h2>İletişim</h2>
-<p>AYAZ GROUP ile iletişime geçin.</p>
-</div>
-
-<div class="contact-box">
-
-<div class="contact-item">
-<strong>📞 Telefon</strong>
-<a href="tel:+905447157701">
-0544 715 77 01
-</a>
-</div>
-
-<div class="contact-item">
-<strong>💬 WhatsApp</strong>
-<a href="https://wa.me/905447157701" target="_blank">
-WhatsApp'tan Yaz
-</a>
-</div>
-
-<div class="contact-item">
-<strong>📍 Konum</strong>
-<span>Bursa</span>
-</div>
-
-</div>
-
-</div>
+  <div class="section-title">
+    <h2>Projenizi Birlikte Değerlendirelim</h2>
+    <p>GES ve enerji çözümleri hakkında bilgi almak için bize ulaşın.</p>
+  </div>
+  <p><strong>Telefon:</strong> 0544 715 77 01</p>
+  <p><strong>Bölge:</strong> Bursa ve çevresi</p>
+  <a class="btn" href="https://wa.me/905447157701" target="_blank" rel="noopener">WhatsApp'tan Ulaş</a>
 </section>
+</main>
 
 <footer>
-<div class="container">
-
-<p>
-© 2026 <strong>AYAZ GROUP</strong> —
-Geleceğe Güç Katıyoruz.
-</p>
-
-</div>
+  <p>© <span id="yil"></span> AYAZ GROUP. Tüm hakları saklıdır.</p>
+  <p>Yenilenebilir Enerji ve GES Çözümleri</p>
 </footer>
 
 <script>
-function menuAc() {
+function gesHesapla(){
+  const tuketim = Number(document.getElementById("tuketim").value);
+  const panelWatt = Number(document.getElementById("panel").value);
+  const sonuc = document.getElementById("result");
 
-    var menu = document.getElementById("menu");
+  if(tuketim <= 0 || panelWatt <= 0){
+    sonuc.style.display = "block";
+    sonuc.textContent = "Lütfen aylık tüketim ve panel gücü için geçerli değerler gir.";
+    return;
+  }
 
-    if (menu.classList.contains("show")) {
-        menu.classList.remove("show");
-    } else {
-        menu.classList.add("show");
-    }
+  const sistemKW = tuketim / 120;
+  const panelSayisi = Math.ceil((sistemKW * 1000) / panelWatt);
+  const tahminiUretim = Math.round(sistemKW * 120);
+
+  sonuc.style.display = "block";
+  sonuc.innerHTML =
+    "<strong>Yaklaşık sistem gücü:</strong> " + sistemKW.toFixed(2) + " kW<br>" +
+    "<strong>Tahmini panel sayısı:</strong> " + panelSayisi + " adet<br>" +
+    "<strong>Hedeflenen aylık üretim:</strong> " + tahminiUretim + " kWh";
 }
-
-function gesHesapla() {
-
-    var tuketim = Number(
-        document.getElementById("tuketim").value
-    );
-
-    var panelWatt = Number(
-        document.getElementById("panel").value
-    );
-
-    if (tuketim <= 0 || panelWatt <= 0) {
-        alert("Lütfen geçerli değerler girin.");
-        return;
-    }
-
-    var sistemKW = tuketim / 120;
-
-    var panelKW = panelWatt / 1000;
-
-    var panelSayisi = Math.ceil(
-        sistemKW / panelKW
-    );
-
-    var yillikUretim =
-        sistemKW * 120 * 12;
-
-    document.getElementById("sistemGucu").textContent =
-        sistemKW.toFixed(2);
-
-    document.getElementById("panelSayisi").textContent =
-        panelSayisi;
-
-    document.getElementById("yillikUretim").textContent =
-        Math.round(yillikUretim).toLocaleString("tr-TR");
-
-    document.getElementById("sonuc").style.display =
-        "block";
-}
+document.getElementById("yil").textContent = new Date().getFullYear();
 </script>
 
 </body>
