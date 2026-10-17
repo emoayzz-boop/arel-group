@@ -1,56 +1,192 @@
-      <p>İşletmelerin ve üretim tesislerinin enerji ihtiyaçlarına yönelik çözümler.</p>
-    </article>
-    <article class="card">
-      <h3>Bağımsız Sistemler</h3>
-      <p>Şebekeden bağımsız kullanım için uygun sistem seçeneklerinin değerlendirilmesi.</p>
-    </article>
-  </div>
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AYAZ GROUP | Yenilenebilir Enerji</title>
+<meta name="description" content="AYAZ GROUP Bursa GES, güneş enerjisi ve enerji depolama çözümleri.">
+<meta name="google-site-verification" content="8hpRFgybB-83_ciAgihkqKfokT-UW2thPN7uhkyAySo">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#f4f7fa;color:#263449;line-height:1.6}
+header{background:#071a33;color:white;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.logo{font-size:24px;font-weight:bold;color:#38d39f}
+nav{display:flex;gap:13px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-size:14px}
+nav a:hover{color:#38d39f}
+.hero{background:linear-gradient(135deg,#071a33,#164766);color:white;text-align:center;padding:75px 18px}
+.hero h1{font-size:clamp(32px,6vw,52px);line-height:1.2;margin-bottom:18px}
+.hero p{max-width:680px;margin:0 auto 24px;color:#e0e9f0}
+.btn{display:inline-block;background:#38d39f;color:#071a33;padding:12px 20px;border:0;border-radius:7px;text-decoration:none;font-weight:bold;cursor:pointer}
+.outline{display:inline-block;border:1px solid #38d39f;color:#38d39f;padding:11px 18px;border-radius:7px;text-decoration:none;margin:5px}
+section{padding:48px 6%}
+.heading{text-align:center;margin-bottom:25px}
+.heading h2{color:#071a33;font-size:30px}
+.heading p{color:#64748b;margin-top:6px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.card{background:white;padding:22px;border-radius:10px;border:1px solid #e1e8ef}
+.card h3{color:#087f62;margin-bottom:8px}
+.about,.quote-section{background:#eaf2f7}
+.about-text{max-width:800px;margin:auto;text-align:center}
+.panel{max-width:620px;margin:auto;background:white;padding:22px;border-radius:10px}
+label{display:block;font-weight:bold;margin:12px 0 5px}
+input,select,textarea{width:100%;padding:11px;border:1px solid #cbd5e1;border-radius:6px;font:inherit;background:white}
+textarea{min-height:85px}
+.full{width:100%;margin-top:16px}
+#result{display:none;margin-top:15px;padding:12px;background:#e7f8f1;border-radius:7px}
+.small{font-size:12px;color:#64748b;margin-top:10px}
+.contact{background:#071a33;color:white;text-align:center}
+.contact h2{color:white}
+.contact p{margin:8px}
+footer{background:#041020;color:#cbd5e1;text-align:center;padding:18px;font-size:13px}
+.fixed{position:fixed;right:12px;bottom:12px;background:#168d55;color:white;padding:12px 16px;border-radius:25px;text-decoration:none;font-weight:bold}
+@media(max-width:600px){header{justify-content:center}nav{justify-content:center}nav a{font-size:12px}section{padding:38px 5%}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">AYAZ GROUP</div>
+<nav>
+<a href="#anasayfa">Ana Sayfa</a>
+<a href="#cozumler">Çözümler</a>
+<a href="#hakkimizda">Hakkımızda</a>
+<a href="#hesapla">GES Hesapla</a>
+<a href="#teklif">Teklif Al</a>
+<a href="#iletisim">İletişim</a>
+</nav>
+</header>
+
+<main>
+<section class="hero" id="anasayfa">
+<h1>Geleceğe Güç Katıyoruz.</h1>
+<p>Bursa ve çevresinde güneş enerjisi sistemleri, enerji depolama ve yenilenebilir enerji çözümleri.</p>
+<a class="btn" href="#teklif">Ücretsiz Teklif Al</a>
+<a class="outline" href="https://wa.me/905447157701" target="_blank" rel="noopener">WhatsApp'tan Ulaş</a>
+</section>
+
+<section id="cozumler">
+<div class="heading"><h2>Çözümlerimiz</h2><p>Enerji ihtiyacına uygun seçenekler.</p></div>
+<div class="cards">
+<div class="card"><h3>Çatı GES</h3><p>Konut ve işletmeler için çatı güneş enerjisi sistemleri.</p></div>
+<div class="card"><h3>Arazi GES</h3><p>Arazi tipi güneş enerjisi projelerinin değerlendirilmesi.</p></div>
+<div class="card"><h3>Ticari ve Endüstriyel</h3><p>İşletmeler ve üretim tesisleri için enerji çözümleri.</p></div>
+<div class="card"><h3>Enerji Depolama</h3><p>Akü ve batarya sistemleri için seçenekler.</p></div>
+<div class="card"><h3>Projelendirme</h3><p>Enerji ihtiyacına yönelik ön değerlendirme ve planlama.</p></div>
+<div class="card"><h3>Bakım ve Servis</h3><p>Güneş enerjisi sistemleri için bakım ve teknik destek.</p></div>
+</div>
+</section>
+
+<section class="about" id="hakkimizda">
+<div class="heading"><h2>Hakkımızda</h2></div>
+<p class="about-text">AYAZ GROUP olarak yenilenebilir enerji alanında ihtiyaca uygun çözümleri önemsiyoruz. Bursa ve çevresindeki projeler için doğru seçenekleri değerlendirmeyi ve şeffaf iletişim kurmayı hedefliyoruz.</p>
+</section>
+
+<section>
+<div class="heading"><h2>Neden AYAZ GROUP?</h2></div>
+<div class="cards">
+<div class="card"><h3>İhtiyaca Uygun</h3><p>Enerji tüketimine göre çözüm değerlendirmesi.</p></div>
+<div class="card"><h3>Şeffaf İletişim</h3><p>Seçenekler ve süreçler hakkında açık bilgilendirme.</p></div>
+<div class="card"><h3>Geleceğe Yönelik</h3><p>Yenilenebilir enerji ve verimlilik odaklı yaklaşım.</p></div>
+</div>
+</section>
+
+<section class="about" id="hesapla">
+<div class="heading"><h2>GES Güç Tahmini</h2><p>Aylık tüketimine göre yaklaşık hesaplama.</p></div>
+<div class="panel">
+<label for="tuketim">Aylık tüketim (kWh)</label>
+<input id="tuketim" type="number" min="1" placeholder="Örnek: 1000">
+<label for="panel">Panel gücü</label>
+<select id="panel">
+<option value="450">450 Watt</option>
+<option value="550" selected>550 Watt</option>
+<option value="600">600 Watt</option>
+<option value="650">650 Watt</option>
+</select>
+<button class="btn full" type="button" onclick="gesHesapla()">Tahmini Hesapla</button>
+<div id="result" aria-live="polite"></div>
+<p class="small">Bu yalnızca ön tahmindir. Gerçek sistem boyutlandırması saha, konum, gölgelenme ve tüketim koşullarına göre yapılmalıdır.</p>
+</div>
+</section>
+
+<section id="projeler">
+<div class="heading"><h2>Çalışma Alanlarımız</h2></div>
+<div class="cards">
+<div class="card"><h3>Konutlar</h3><p>Evler ve villalar için enerji çözümleri.</p></div>
+<div class="card"><h3>İşletmeler</h3><p>Ticari alanlar ve üretim tesisleri için GES seçenekleri.</p></div>
+<div class="card"><h3>Bağımsız Sistemler</h3><p>Şebekeden bağımsız kullanım için sistem değerlendirmesi.</p></div>
+</div>
 </section>
 
 <section class="quote-section" id="teklif">
-  <div class="section-title">
-    <h2>Ücretsiz Teklif İste</h2>
-    <p>Projenin temel bilgilerini gönder, WhatsApp üzerinden iletişime geçelim.</p>
-  </div>
-  <div class="quote-box">
-    <form onsubmit="teklifGonder(event)">
-      <label for="ad">Adın veya işletme adı</label>
-      <input id="ad" required placeholder="Ad veya işletme adı">
-
-      <label for="hizmet">İlgilendiğin hizmet</label>
-      <select id="hizmet" required>
-        <option value="">Seçim yap</option>
-        <option>Çatı GES</option>
-        <option>Arazi GES</option>
-        <option>Ticari ve Endüstriyel GES</option>
-        <option>Enerji Depolama</option>
-        <option>Bakım ve Servis</option>
-        <option>Diğer</option>
-      </select>
-
-      <label for="sehir">Projenin bulunduğu şehir</label>
-      <input id="sehir" required placeholder="Örnek: Bursa">
-
-      <label for="mesaj">Proje hakkında bilgi</label>
-      <textarea id="mesaj" placeholder="Varsa elektrik tüketimi ve proje detayları"></textarea>
-
-      <button class="btn full" type="submit">WhatsApp ile Teklif İste</button>
-    </form>
-  </div>
+<div class="heading"><h2>Ücretsiz Teklif İste</h2><p>Bilgilerini doldur, WhatsApp üzerinden teklif talebi gönder.</p></div>
+<div class="panel">
+<form onsubmit="teklifGonder(event)">
+<label for="ad">Ad veya işletme adı</label>
+<input id="ad" required placeholder="Adını yaz">
+<label for="hizmet">İlgilendiğin hizmet</label>
+<select id="hizmet" required>
+<option value="">Seçim yap</option>
+<option>Çatı GES</option>
+<option>Arazi GES</option>
+<option>Ticari ve Endüstriyel GES</option>
+<option>Enerji Depolama</option>
+<option>Bakım ve Servis</option>
+<option>Diğer</option>
+</select>
+<label for="sehir">Proje şehri</label>
+<input id="sehir" required placeholder="Örnek: Bursa">
+<label for="detay">Proje detayları</label>
+<textarea id="detay" placeholder="Tüketim ve proje hakkında bilgi"></textarea>
+<button class="btn full" type="submit">WhatsApp ile Teklif İste</button>
+</form>
+</div>
 </section>
 
 <section class="contact" id="iletisim">
-  <div class="section-title">
-    <h2>İletişim</h2>
-    <p>Projen hakkında konuşmak için bize ulaş.</p>
-  </div>
-  <p><strong>AYAZ GROUP</strong></p>
-  <p>Telefon: 0544 715 77 01</p>
-  <p>Hizmet bölgesi: Bursa ve çevresi</p>
-  <a class="btn" href="https://wa.me/905447157701" target="_blank" rel="noopener">WhatsApp'tan Ulaş</a>
+<div class="heading"><h2>İletişim</h2><p>Projen hakkında konuşmak için bize ulaş.</p></div>
+<p><strong>AYAZ GROUP</strong></p>
+<p>Telefon: 0544 715 77 01</p>
+<p>Hizmet bölgesi: Bursa ve çevresi</p>
+<a class="btn" href="https://wa.me/905447157701" target="_blank" rel="noopener">WhatsApp'tan Ulaş</a>
 </section>
 </main>
 
 <footer>
-  <p>© <span id="yil"></span> AYAZ GROUP. Tüm hakları saklıdır.</p>
-  <p>Yenilenebilir Enerji ve GES Çözümleri</p
+<p>© <span id="yil"></span> AYAZ GROUP. Tüm hakları saklıdır.</p>
+<p>Yenilenebilir Enerji ve GES Çözümleri</p>
+</footer>
+
+<a class="fixed" href="https://wa.me/905447157701" target="_blank" rel="noopener">WhatsApp</a>
+
+<script>
+function gesHesapla(){
+const tuketim=Number(document.getElementById("tuketim").value);
+const panel=Number(document.getElementById("panel").value);
+const sonuc=document.getElementById("result");
+if(tuketim<=0){
+sonuc.style.display="block";
+sonuc.textContent="Lütfen aylık tüketimini gir.";
+return;
+}
+const guc=tuketim/120;
+const adet=Math.ceil(guc*1000/panel);
+sonuc.style.display="block";
+sonuc.innerHTML="<strong>Yaklaşık sistem gücü:</strong> "+guc.toFixed(2)+" kW<br><strong>Tahmini panel sayısı:</strong> "+adet+" adet";
+}
+function teklifGonder(event){
+event.preventDefault();
+const ad=document.getElementById("ad").value.trim();
+const hizmet=document.getElementById("hizmet").value;
+const sehir=document.getElementById("sehir").value.trim();
+const detay=document.getElementById("detay").value.trim();
+const mesaj="Merhaba AYAZ GROUP, teklif almak istiyorum.\n"+
+"Ad/İşletme: "+ad+"\nHizmet: "+hizmet+"\nŞehir: "+sehir+"\nProje detayları: "+detay;
+window.open("https://wa.me/905447157701?text="+encodeURIComponent(mesaj),"_blank");
+}
+document.getElementById("yil").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
